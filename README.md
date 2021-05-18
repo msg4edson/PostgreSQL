@@ -14,7 +14,7 @@ psql -U postgres -h localhost
 
 
 
-ostgres=# \du
+postgres=# \du
 To List of roles
 
 SELECT * FROM gp_roles;
