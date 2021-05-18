@@ -19,5 +19,21 @@ To List of roles
 
 SELECT * FROM gp_roles;
 
+#### Alter Role
+
+ALTER ROLE professores PASSWORD '123';
+
+Open via CMD:
+
+\q
+
+![image-20210518160536071](C:\Users\edson.dasilva\AppData\Roaming\Typora\typora-user-images\image-20210518160536071.png)
+
+
+
+
+
+
+
 
 
