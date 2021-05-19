@@ -1,8 +1,15 @@
-## PostgreSQL
+# PostgreSQL
+
+
+## Administrar usuário no banco de dados
 
 #### Create Role
 
 CREATE ROLE professores NOCREATEDB NOCREATEROLE INHERIT NOLOGIN NOBYPASSRLS CONNECTION LIMIT 10;
+
+CREATE ROLE daniel LOGIN PASSWORD '123';
+
+CREATE ROLE daniel LOGIN PASSWORD '123' IN ROLE professores;
 
 
 
@@ -27,7 +34,11 @@ Open via CMD:
 
 \q
 
-![image-20210518160536071](C:\Users\edson.dasilva\AppData\Roaming\Typora\typora-user-images\image-20210518160536071.png)
+#### Drop Role
+
+DROP ROLE daniel;
+
+
 
 
 
