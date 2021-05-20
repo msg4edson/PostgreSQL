@@ -50,4 +50,5 @@ GRANT ALL ON TABLE teste TO professores;
 REVOKE professores FROM daniel;
 
 
+## Objetos e comandos do banco de dados
 
