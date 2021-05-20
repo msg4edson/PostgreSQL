@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # PostgreSQL
 
 
@@ -12,6 +10,8 @@ CREATE ROLE professores NOCREATEDB NOCREATEROLE INHERIT NOLOGIN NOBYPASSRLS CONN
 CREATE ROLE daniel LOGIN PASSWORD '123';
 
 CREATE ROLE daniel LOGIN PASSWORD '123' IN ROLE professores;
+
+CREATE ROLE daniel INHERIT LOGIN PASSWORD '123' IN ROLE professores;
 
 
 
@@ -40,14 +40,12 @@ Open via CMD:
 
 DROP ROLE daniel;
 
+#### Grant
+
+GRANT ALL ON TABLE teste TO professores;
 
 
+#### Revoke Role
 
-
-
-
-
-
-
->>>>>>> 35c0d03132b396e3fb901aa71f101ffca44bba96
+REVOKE professores FROM daniel;
 
